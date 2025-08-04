@@ -9,15 +9,11 @@ def main():
 
     def get_word_count(book_text):
         
-        split_text = book_text.split(" ")
+        split_text = book_text.split()
 
-        count = 0
+        count = len(split_text)
 
-        for words in split_text:
-
-            count +=1
-
-        print(f"{count} words found in document")
+        print(f"{count} words found in the document")
 
     #get_book_text("./books/frankenstein.txt")
         
